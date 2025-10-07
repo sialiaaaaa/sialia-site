@@ -12,6 +12,8 @@ body {
 h1, h2, h3, h4, h5, h6 { margin: 0px; margin-top: 10px; padding: 0px; }
 p { margin: 0px; }
 
+.blue { color: cornflowerblue; }
+
 .footnote-definition { display: block; }
 .footnote-definition sup { display: inline; }
 .footnote-definition p { margin-left: 0px; display:inline; }
