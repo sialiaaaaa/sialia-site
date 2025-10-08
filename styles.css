@@ -1,16 +1,19 @@
 @import "css/colors.css";
+@import "css/codehilite.css";
 
 body {
     background-color: var(--background-pane);
     font-family: "JetBrains Mono", "Courier New",  monospace;
     color: var(--body);
-    margin: 0px;
-    margin-left: 30px;
+    margin: auto;
+    margin-left: 100px;
     max-width: calc(min(100ch, 95%));
+
 }
 
 h1, h2, h3, h4, h5, h6 { margin: 0px; margin-top: 10px; padding: 0px; }
-p { margin: 0px; }
+p { margin: 0px; margin-bottom: 10px; }
+li p { margin-left: 0px; }
 
 .koraki { color: cornflowerblue; }
 .subtle { color: var(--subtle); }
@@ -19,8 +22,13 @@ p { margin: 0px; }
 .footnote-definition sup { display: inline; }
 .footnote-definition p { margin-left: 0px; display:inline; }
 
-pre { margin-left: 70px; }
-code { font-size: 14px; }
+pre { margin: 0px; }
+code { font-size: 14px; background-color: var(--secondary-pane); }
+tbody { margin: 0px; }
+.codehilite { margin-left: 60px;  overflow-x: auto;}
+.codehilitetable { border: 20px; border-style: solid; border-color: var(--tertiary-pane); border-width: 2px; border-radius: 3px; }
+.linenos { font-size: 14px; }
+.code { margin: 0px; padding-left: 10px; padding-right: 10px; font-size: 14px; background-color: var(--secondary-pane);}
 
 h1   { color: var(--red); }
 h2   { color: var(--green);  margin-left: 10px; }
