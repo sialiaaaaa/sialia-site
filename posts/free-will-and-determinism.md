@@ -4,7 +4,7 @@ template: blog
 ## And Lady Macbeth
 ### And *The Merchant and the Alchemist's Gate* by Ted Chiang
 #### And Vriska Serket from Homestuck
-##### Mostly authored by <strong class="blue">someone</strong>
+##### Mostly authored by <strong class="koraki">someone</strong>
 
 ok so
 
