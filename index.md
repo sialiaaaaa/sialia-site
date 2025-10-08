@@ -2,6 +2,7 @@ template: default
 
 ## About
 ### Myself
+I am Lucy, linguistics student and general nerd-hobby-enjoyer based in Scotland. With regards to the former, I specialise in semantics and am currently writing a dissertation on indexical shift; concerning the latter I play a lot of tabletop role-playing games and video games. I have other hobbies too.
 
 I can be found on [Github](https://github.com/sialiaaaaa) and [LinkedIn](https://www.linkedin.com/in/lucy-winters/) and emailed directly at lucy @ this domain.
 
@@ -11,7 +12,7 @@ This website's colour scheme is [Catppuccin Frappé](https://github.com/catppucc
 I recommend the works and website of [Cosmo](https://cosmo.tardis.ac/).
 
 ## Opera
-I write a lot of stories and rules. Some of the things I've written are here :)
+I write a lot of stories and rules. Some of the things I've written are here!
 
 ### Blog
 [[posts/thoughts-on-coc-7e|Thoughts on *Call of Cthulhu* 7E]] Some immediate musings on my one-shot of CoC7E.
