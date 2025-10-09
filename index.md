@@ -2,19 +2,21 @@ template: default
 
 ## About
 ### Myself
-I am Lucy, linguistics student and general nerd-hobby-enjoyer based in Scotland. With regards to the former, I specialise in semantics and am currently writing a dissertation on indexical shift; concerning the latter I play a lot of tabletop role-playing games and video games. I have other hobbies too.
+I am Lucy, linguistics student specialising in semantics and general doer of other things. I write a lot of stories and rules. Some of the things I've written are here!
 
-I can be found on [Github](https://github.com/sialiaaaaa) and [LinkedIn](https://www.linkedin.com/in/lucy-winters/) and emailed directly at lucy @ this domain.
+#### Contact
+I can be found on [GitHub](https://github.com/sialiaaaaa) and [LinkedIn](https://www.linkedin.com/in/lucy-winters/) and emailed directly at lucy @ this domain.
 
 ### Others
-This website's colour scheme is [Catppuccin Frappé](https://github.com/catppuccin/catppuccin/). The site is hosted with [The Tardis Project](https://tardisproject.uk/).
+This website's colour scheme is [Catppuccin Frappé](https://github.com/catppuccin/catppuccin/) and its preferred font is [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) The site is hosted with [The Tardis Project](https://tardisproject.uk/).
 
 I recommend the works and website of [Cosmo](https://cosmo.tardis.ac/).
 
 ## Opera
-I write a lot of stories and rules. Some of the things I've written are here!
 
 ### Blog
+[[posts/making-overgrazed|Making a Static Site Generator]] A writeup of how I made Overgrazed (see below) and this website
+
 [[posts/thoughts-on-coc-7e|Thoughts on *Call of Cthulhu* 7E]] Some immediate musings on my one-shot of CoC7E.
 
 [[posts/fortuna-caeca-est|*Fortuna Caeca Est*]] My notes on a D&D 5E campaign that never took off, based on a pre-written adventure.
@@ -38,4 +40,3 @@ I write a lot of stories and rules. Some of the things I've written are here!
 [[content/freebird-adventure-log|Freebird's Adventure Log]] The very long, very comprehensive log of a certain corvid's time dreaming.
 
 [*The Montonet Curse*](/content/The_Montonet_Curse_V0.9.pdf) (26.07 MB PDF) A short 5th edition *Dungeons & Dragons* adventure that is still, years later, not fully revised. Features some abstract AI art, from back when AI art was just strange and evocative.
-

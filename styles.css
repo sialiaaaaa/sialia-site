@@ -1,6 +1,7 @@
 @import "css/colors.css";
 @import "css/codehilite.css";
 
+/***
 body {
     background-color: var(--background-pane);
     font-family: "JetBrains Mono", "Courier New",  monospace;
@@ -29,12 +30,53 @@ tbody { margin: 0px; }
 .codehilitetable { border: 20px; border-style: solid; border-color: var(--tertiary-pane); border-width: 2px; border-radius: 3px; }
 .linenos { font-size: 14px; }
 .code { margin: 0px; padding-left: 10px; padding-right: 10px; font-size: 14px; background-color: var(--secondary-pane);}
+***/
 
-h1   { color: var(--red); }
-h2   { color: var(--green);  margin-left: 10px; }
-h3   { color: var(--yellow); margin-left: 20px; }
-h4   { color: var(--blue);   margin-left: 30px; }
-h5   { color: var(--pink);   margin-left: 40px; }
-h6   { color: var(--teal);   margin-left: 50px; }
-p    { color: var(--body);   margin-left: 60px; }
-a    { color: var(--links);  text-decoration: underline; }
+/* Background and full body styling. */
+body {
+    background-color: var(--background-pane);
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    max-width: calc(min(100ch, round(down, 80%, 1ch)));
+    margin: auto;
+    transform: translateX(-3em);
+}
+
+/* Indentation and colour for the various heading levels and paragraphs. */
+h1   { color: var(--red);    margin-left: 0em; }
+h2   { color: var(--green);  margin-left: 1em; }
+h3   { color: var(--yellow); margin-left: 2em; }
+h4   { color: var(--blue);   margin-left: 3em; }
+h5   { color: var(--pink);   margin-left: 4em; }
+h6   { color: var(--teal);   margin-left: 5em; }
+p    { color: var(--body);   margin-left: 6em; }
+
+/* Rule for spacing between headings vs spacing between headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p { margin-top: 0.25em; margin-bottom: 0.25em }
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + p { margin-top: 1em; }
+
+/* Styling for certain specific elemens, like list items and links. */
+a { color: var(--links);  text-decoration: underline; }
+
+/* A few custom class styles. */
+.koraki { color: cornflowerblue; }
+.subtle { color: var(--subtle); }
+
+/* Code block changes */
+code {
+    background-color: var(--tertiary-pane);
+    font-size: 0.9rem;
+}
+
+.codehilite {
+    margin-left: 7em;
+    max-width: 80%;
+    overflow-x: auto;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    border-color: var(--secondary-pane);
+    font-size: 0.9rem;
+}
+
+
+
