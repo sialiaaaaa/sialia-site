@@ -15,7 +15,7 @@ I recommend the works and website of [Cosmo](https://cosmo.tardis.ac/).
 ## Opera
 
 ### Blog
-[[posts/making-overgrazed|Making a Static Site Generator]] A writeup of how I made Overgrazed (see below) and this website
+[[posts/making-overgrazed|Making a Static Site Generator]] A writeup of how I made Overgrazed (see below) and this website.
 
 [[posts/thoughts-on-coc-7e|Thoughts on *Call of Cthulhu* 7E]] Some immediate musings on my one-shot of CoC7E.
 

@@ -1,4 +1,4 @@
-@import "css/colors.css";
+@import "css/catppuccin-frappe.css";
 @import "css/codehilite.css";
 
 /***
@@ -19,7 +19,7 @@ li p { margin-left: 0px; }
 .koraki { color: cornflowerblue; }
 .subtle { color: var(--subtle); }
 
-.footnote-definition { display: block; }
+.{ display: block; }
 .footnote-definition sup { display: inline; }
 .footnote-definition p { margin-left: 0px; display:inline; }
 
@@ -42,20 +42,26 @@ body {
 }
 
 /* Indentation and colour for the various heading levels and paragraphs. */
-h1   { color: var(--red);    margin-left: 0em; }
-h2   { color: var(--green);  margin-left: 1em; }
-h3   { color: var(--yellow); margin-left: 2em; }
-h4   { color: var(--blue);   margin-left: 3em; }
-h5   { color: var(--pink);   margin-left: 4em; }
-h6   { color: var(--teal);   margin-left: 5em; }
-p    { color: var(--body);   margin-left: 6em; }
+h1    { color: var(--red);    margin-left: 0em; }
+h2    { color: var(--green);  margin-left: 1em; }
+h3    { color: var(--yellow); margin-left: 2em; }
+h4    { color: var(--blue);   margin-left: 3em; }
+h5    { color: var(--pink);   margin-left: 4em; }
+h6    { color: var(--teal);   margin-left: 5em; }
+p, ol { color: var(--body);   margin-left: 6em; }
 
 /* Rule for spacing between headings vs spacing between headings and paragraphs */
-h1, h2, h3, h4, h5, h6, p { margin-top: 0.25em; margin-bottom: 0.25em }
-p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + p { margin-top: 1em; }
+/*h1, h2, h3, h4, h5, h6, p { margin-top: 0.25em; margin-bottom: 0.25em } */
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + p, li { margin-top: 1em; }
 
 /* Styling for certain specific elemens, like list items and links. */
 a { color: var(--links);  text-decoration: underline; }
+
+/* Styling for footnotes */
+.footnote hr { color: var(--tertiary-pane); }
+.footnote li p { margin-left: 0em; }
+.footnote li::marker { color: var(--body); }
+
 
 /* A few custom class styles. */
 .koraki { color: cornflowerblue; }
