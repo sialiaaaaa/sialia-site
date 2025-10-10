@@ -42,7 +42,11 @@ First the GitHub repository needed a name, which means my piece of software need
 I started writing some code. Implementing the `python-markdown` library was pretty easy:
 
 ```python
-md = markdown.Markdown(extensions=["footnotes", "fenced_code", "tables"])
+md = markdown.Markdown(extensions=[
+                            "footnotes",
+                            "fenced_code",
+                            "tables"
+                            ])
 
 def convert_md_to_html(input_file):
 
@@ -58,6 +62,27 @@ And not just store the HTML of a page in a giant format string.
 
 So I ended up with a plan:
 
-1. Allow the user to write HTML 'templates' and 'snippets' to insert into those templates. Overgrazed would see a `.md` file, determine the template it wanted to be slotted into, apply snippets to that template, and then convert the Markdown and slot it into the template in the appropriate place.
-2. Leave the rest of the user's files alone. Copy the directory, other than Markdown files, into a `_site` folder for deployment (`rsync` to a server or something), then convert the Markdown and put it in the new directory *in the right place* as HTML.
-3. Be safe and reasonably easy to use and handle errors properly. Once again, I wasn't used to writing software for other people to use; normally I'd just patch whatever was causing an error message and try it blindly again.
+1. A website would have a site *source directory* and *destination directory*. Overgrazed would copy all files in the source directory to the destination directory. If any of those files were Markdown, they'd be converted to HTML first.
+
+2. When the Markdown was converted to HTML, it'd be formatted into user-defined HTML templates. Those templates would also be able to reference user-defined HTML "snippets" (smaller pieces of HTML like `<head>`s and `<header>`s and `<footer>`s). These "templates" and "snippets" would be stored in the source directory, but ignored by Overgrazed when it was copying everything.
+
+3. Overgrazed wouldn't be dangerous to run. I am far too used to writing scripts for only myself, and letting them `shutil.rmtree(".")` with impunity, trusting myself to point them at the proper directories. I would learn how to handle errors and write reasonably safe code in Python. I might also read the style guide. Y'know, maybe.
+
+### how do you write python
+ohmygodi'veneverwrittenusablesoftwarebeforewheredoistart
+
+Okay slow down. There would be no function-writing until I knew how to make a command-line program that worked. First thing I did was learn how to implement `argparse`, the Python module for reading command-line arguments and making them look pretty:
+
+```
+uv run main.py --help
+usage: main.py [-h]
+
+options:
+  -h, --help         show this help message and exit
+```
+
+Well, okay. I added a `verbose` flag[^1] and `input_file` and `output_file` options. Great! Read those into variables, then do the thing in the code blocks above that I've repeated twice now. Markdown to HTML. Done!
+
+Well, no. I actually want to crawl the whole directory- but first I need to do the copying- but- hm. Okay. One thing at a time. 
+
+[^1]: I eventually removed the flag, but not before writing a `vprint()` function which I went on to not use. And all that happened surprisingly late into development. I guess I assumed verbosity would be at some point useful, or I at least wanted to preserve the flag as an example of how to implement it.

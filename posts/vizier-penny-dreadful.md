@@ -4,7 +4,7 @@ template: blog
 
 ## Introduction
 
-This is an unedited, unexplained collection of notes on my 5th edition _Dungeons & Dragons_ campaign that ran from 2020 to 2023. A summary from one of my <strong class="koraki">someone</strong> is available elsewhere on this site, and perhaps eventually I'll do a nicer write-up of the story. For now, I'll just archive some of the worldbuilding and cosmology for posterity. Enjoy!
+This is an unedited, unexplained collection of notes on my 5th edition _Dungeons & Dragons_ campaign that ran from 2020 to 2023. A summary from one of my <strong class="koraki">players</strong> is available [[../content/freebird-adventure-log|elsewhere on this site]], and perhaps eventually I'll do a nicer write-up of the story. For now, I'll just archive some of the worldbuilding and cosmology for posterity. Enjoy!
 
 ## Encounters
 

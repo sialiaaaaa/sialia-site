@@ -4,7 +4,7 @@ template: blog
 
 ## Foreword
 
-These are the notes of one of my <strong class="koraki">players</strong> from a very long 5th edition _Dungeons & Dragons_ campaign I ran from 2020 to 2023. I'll put some other notes from this adventure in another post, but without further ado, here's a summary from the perspective of a player.
+These are the notes of one of my <strong class="koraki">players</strong> from a very long 5th edition _Dungeons & Dragons_ campaign I ran from 2020 to 2023. I'll put some other notes from this adventure in [[../posts/vizier-penny-dreadful|another post]], but without further ado, here's a summary from the perspective of a player.
 
 ## Chapter 0: Meet the Cast
 
