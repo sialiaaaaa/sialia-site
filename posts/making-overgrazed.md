@@ -15,7 +15,7 @@ html_file.write_text(md.convert(md_file.read_text()))
 ```
 
 ## how for real
-"Every static site generator is terrible," I announced. I was sitting on the floor of my living room, laptop on the coffee table in front of me, scrolling a Jekyll documentation and sighing at every mention of a 'gemfile' or 'bundler'.
+Every static site generator is terrible," I announced. I was sitting on the floor of my living room, laptop on the coffee table in front of me, scrolling a Jekyll documentation and sighing at every mention of a 'gemfile' or 'bundler'.
 
 "I don't use one," announced [Cosmo](https://cosmo.tardis.ac), my very good developer friend. "I just wrote a quick Python script to convert Markdown to HTML."
 
@@ -73,7 +73,7 @@ ohmygodi'veneverwrittenusablesoftwarebeforewheredoistart
 
 Okay slow down. There would be no function-writing until I knew how to make a command-line program that worked. First thing I did was learn how to implement `argparse`, the Python module for reading command-line arguments and making them look pretty:
 
-```
+```text
 uv run main.py --help
 usage: main.py [-h]
 
@@ -83,6 +83,33 @@ options:
 
 Well, okay. I added a `verbose` flag[^1] and `input_file` and `output_file` options. Great! Read those into variables, then do the thing in the code blocks above that I've repeated twice now. Markdown to HTML. Done!
 
-Well, no. I actually want to crawl the whole directory- but first I need to do the copying- but- hm. Okay. One thing at a time. 
+
+
+Well, no. I actually want to crawl the whole directory- but first I need to do the copying- but- hm. Okay. One thing at a time. I wrote some functions to crawl the directory, find all the Markdown files in it, and call the `convert` function on them. Then it stored that HTML in a string. So that's the first of my goals achieved, to some extent.
+
+### achieving the second goal
+
+
+All along I used `os` to do all the filesystem stuff, by the way, which turned out to be a mistake. But more on that later. For now, what it meant was I had an *awful* function to figure out the destination to put HTML files in:
+
+```python
+def build_site(site_dir, dest_dir):
+    shutil.copytree(
+        site_dir,
+        dest_dir,
+        ignore=lambda directory, contents: {name for name in contents if is_ignored_filename(name)}.union({name for name in contents if name.endswith('.md') or name.startswith('_')}),
+        dirs_exist_ok=True) # Copy irrelevant files over
+
+    for root, dirs, files in os.walk(site_dir): # Walk the site directory searching for Markdown files
+        for filename in files:
+            if filename.endswith(".md"):
+                current_file_path = root.replace(site_dir, "")
+                built_page = build_page(site_dir, os.path.join(root, filename)) # Build the Markdown files into pages
+                new_filename = Path(filename).stem + ".html"
+                print(f"{dest_dir} {current_file_path} {new_filename}")
+                with open(os.path.join(dest_dir, current_file_path, new_filename), "w") as f: # Write the built pages into the same location at the destination
+                    f.write(built_page)
+```
+
 
 [^1]: I eventually removed the flag, but not before writing a `vprint()` function which I went on to not use. And all that happened surprisingly late into development. I guess I assumed verbosity would be at some point useful, or I at least wanted to preserve the flag as an example of how to implement it.

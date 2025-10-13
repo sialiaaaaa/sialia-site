@@ -1,0 +1,64 @@
+@import "css/catppuccin-frappe.css";
+@import "css/codehilite.css";
+
+/* Background and full body styling. */
+body {
+    background-color: var(--code-background-pane);
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    max-width: calc(min(100ch, round(down, 80%, 1ch)));
+    margin: auto;
+    transform: translateX(-3em);
+}
+
+/* Indentation and colour for the various heading levels and paragraphs. */
+h1    { color: var(--code-red);    margin-left: 0em; }
+h2    { color: var(--code-peach);  margin-left: 1em; }
+h3    { color: var(--code-yellow); margin-left: 2em; }
+h4    { color: var(--code-green);   margin-left: 3em; }
+h5    { color: var(--code-teal);   margin-left: 4em; }
+h6    { color: var(--code-lavender);   margin-left: 5em; }
+p, ol { color: var(--code-body);   margin-left: 6em; }
+
+/* Rule for spacing between headings vs spacing between headings and paragraphs */
+h1, h2, h3, h4, h5, h6 { margin-top: 0.25em; margin-bottom: 0.25em }
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p { margin-top: 0.25em; } /* Paragraphs that follow headings */
+
+/* Styling for certain specific elemens, like list items and links. */
+a { color: var(--code-blue);  text-decoration: underline; }
+li { margin-top: 0.5em; }
+
+/* Styling for footnotes */
+.footnote hr { color: var(--code-subtle); }
+.footnote li p { margin-left: 0em; }
+.footnote li::marker { color: var(--code-subtle); }
+
+
+/* A few custom class styles. */
+.koraki { color: cornflowerblue; }
+.subtle { color: var(--code-subtle); }
+
+/* Code block changes */
+code:not(.codehilite code) { /* inline */
+    background-color: var(--code-tertiary-pane);
+    font-size: 0.9rem;
+    padding: 0.25em;
+    padding-top: 0.07em;
+    padding-bottom: 0.07em;
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: 0.1em;
+    border-color: var(--code-secondary-pane);
+}
+
+.codehilite { /* fenced */
+    margin-left: 7em;
+    max-width: 80%;
+    overflow-x: auto;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    border-color: var(--code-secondary-pane);
+    font-size: 0.9rem;
+}
+
+

@@ -97,31 +97,3 @@ There are innumerable and ever-more other immortals, such as liches or tardigrad
   
 
 Many of the High Pantheon actually hold multiple seats, such as Dionysus being both the Good God of Folly and of Chaos.
-
-```
-The High Pantheon
-[Format: "N (aspect). Good, Evil"]
-
- 1 (Folly). Dionysus, Varuni
- 2 (Illness). Anuket, Gormach
- 3 (Inquisition). Oghma, Hecate
- 4 (Hours). Nirmala, Freyaer
- 5 (Protection). Bahamut, Anahita
- 6 (Union). Bahamut, Hermod
-There is no seventh member of the High Pantheon, rather, this seat is occupied by the mortal collective.
- 8 (Chaos). Dionysus, Discordia
- 9 (Justice). Taos, Velka
-10 (Treason). Hecate, Velka
-11 (Fortune). Tyche, Espit
-12 (Strength). Bahamut, Taos
-13 (Prudence). Adrasteia, Sobec
-14 (Mortality). Pkaea, Petohmi
-15 (Temperance). Galenia, Adrasteia
-16 (Force). Amaterasu, Hecate
-17 (Misery). Lakshmi, Gormach
-18 (Air). Xanathe, Brahma
-19 (Water). Anahita, Euryale
-20 (Fire). Amaterasu, Kothar-wa-Khasis
-21 (Judgment). Velka, Velka
-22 (Earth). Kothar-wa-Khasis, Nefertem
-```

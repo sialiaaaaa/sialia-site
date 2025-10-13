@@ -2,7 +2,7 @@ template: blog
 
 # i remembered that blogs are for posts
 
-I've just finished playing in a one-shot (_The Haunting_) of 7th edition _Call of Cthulhu_ and I have many thoughts which I will now be forcibly subjecting you to. I won't be discussing the plot or anything so fear not.
+Ive just finished playing in a one-shot (_The Haunting_) of 7th edition _Call of Cthulhu_ and I have many thoughts which I will now be forcibly subjecting you to. I won't be discussing the plot or anything so fear not.
 
 This is the first time I've been a player in a TTRPG in roughly four years. Possibly as many as six, I can't remember. I'm that sort of forever-DM.
 
